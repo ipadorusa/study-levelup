@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
     <title>Document</title>
 </head>
 <body>
     <section id="app">
         <h1>Todos</h1>
-        <input type="text" id="new_input" autofocus>
+        <input type="text" id="new_input" placeholder="What needs to be done?" autofocus>
     </section>
     <section>
         <h2>TodoList</h2>
@@ -17,12 +18,12 @@
             <li>
                 <div class="view">
                     <input type="checkbox">
-                    <label for=""></label>
-                    <button type="button" class="btn_del"></button>
+                    <label>a</label>
+                    <button type="button" class="btn_del">x</button>
                 </div>
             </li>
         </ul>
     </section>
-    <script src="app.js"></script>
+    <script type="module" src="app.js"></script>
 </body>
 </html>

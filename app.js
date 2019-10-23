@@ -1,1 +1,3 @@
-import Todos from './todos'
+import View from './view.js'
+
+const view = new View();
