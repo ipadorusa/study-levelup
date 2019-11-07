@@ -26,4 +26,23 @@ const loadImage = url => new Promise((resolve, reject) => {
   };
   return img;
 });
-loadImage(imgs[0].url).then(img => log('a', img.height));
+
+function * map(f, iter) {
+  for (const f of iter) {
+    yield a instanceof Promise ? a.then(f) : f(a);
+  }
+}
+
+
+
+const sum = (num, prev = 0) => {
+  prev += prev;
+
+};
+sum(3);
+
+
+
+
+
+
