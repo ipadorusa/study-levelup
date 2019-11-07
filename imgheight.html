@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    const {log, clear} = console;
+    
+   
+    function fetchItems() {
+      return new Promise(function(resolve, reject) {
+        var items = [1,2,3];
+        resolve(items)
+      });
+    }
+
+    async function logItems() {
+      var resultItems = await fetchItems();
+      log(resultItems);
+    }
+    logItems();
+  </script>
+</body>
+</html>
